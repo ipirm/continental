@@ -1,0 +1,131 @@
+ .questions-head {
+    color: black;
+    font-family: 'Stag Sans Medium';
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.center {}
+
+section.questions {
+    padding: 54px 0 25px 0;
+    background: #e4e8ec;
+}
+
+.questions-item-head p {
+    font-family: 'Stag Sans Book';
+    font-size: 29.5px;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.questions-block {
+    /* max-width: 890px; */
+    margin: 0 auto;
+    padding: 0 80px 0 146px;
+    margin-top: 40px;
+}
+
+.questions-item-body p {
+    color: black;
+    font-family: 'Stag Sans Book';
+    font-size: 23.5px;
+    line-height: 28px;
+    letter-spacing: 0.002em;
+}
+
+.questions-item-body {
+    display: none;
+    padding: 27px 0 0 37px;
+}
+
+.questions-item {
+    margin-bottom: 22px;
+}
+
+.questions-item-head.act p {
+    color: #fea40a !important;
+    transition: all 0.3s ease;
+}
+
+.questions-item-body.act {
+    display: block !important;
+    transition: all 0.3s ease;
+}
+
+
+
+@media(max-width:767px){
+    
+
+
+    .questions-head {
+    font-size: 37px;
+    line-height: 45px;
+}
+
+section.questions {
+    padding-top: 39px;
+}
+
+.questions-item-head p {
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.questions-block {
+    padding: 14px 60px 0 69px;
+}
+
+.questions-item-head {
+    border-bottom: 1px solid;
+    padding-bottom: 13px;
+}
+
+.questions-item {
+    margin-bottom: 25px !important;
+}
+
+.questions-item:last-child .questions-item-head {
+    border: none;
+}
+
+.questions-item-head.act {
+    border: none !important;
+}
+
+.questions-item-body p {
+    font-size: 29px;
+    line-height: 35px;
+}
+
+.questions-item-body {
+    padding-top: 6px;
+}
+}
+
+@media(max-width:450px){
+    
+.questions-head {
+    font-size: 30px;
+}
+
+.questions-item-head p {
+    font-size: 25px;
+    left: 30px;
+}
+
+.questions-block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.questions-item-body p {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+}

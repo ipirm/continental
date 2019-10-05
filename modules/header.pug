@@ -1,0 +1,95 @@
+div(class="login-form-header")
+  h1 АВТОРИЗАЦИЯ
+  form
+    div(class="close-popup-form")
+    div(class="athor-login")
+     input(type="text" placeholder="Логин")
+     input(type="password" placeholder="Пароль")
+    div(class="login-button")
+     div(class="button-to-login") Войти
+    div(class="form-links")
+     div(class="password-forgot")
+      p Забыли пароль?
+     a(href="#", class="register-form-open")
+      p Регистрация
+
+div(class="register-form-header")
+   h1 РЕГИСТРАЦИЯ
+   form
+     div(class="close-popup-form")
+     div(class="register-form-block")
+      div(class="register-form-block-1")
+          input(type="text" placeholder="Имя")
+          input(type="text" placeholder="Отчество")
+          input(type="password" placeholder="Пароль")
+      div(class="register-form-block-2")
+         input(type="text" placeholder="Фамилия")
+         input(type="email" placeholder="E-mail")
+         input(type="password" placeholder="Пароль еще раз")
+     div(class="custom-control custom-radio" id="reg-button")
+         input(type="radio" class="custom-control-input" id="defaultGroup")
+         label(class="custom-control-label" for="defaultGroup")
+          span Я согласен с &nbsp;
+              a(href="#") Правилами акции &nbsp;
+              br
+              span и &nbsp;
+              a(href="#") Пользовательским соглашением
+     div(class="register-send-button")
+      div(class="send-button") Отправить
+div(class="password-recover")
+    div(class="close-popup-form")
+    h1 ВОССТАНОВЛЕНИЕ ПАРОЛЯ
+    form
+        input(type="email" placeholder="E-mail")
+    div(class="register-send-button")
+        div(class="send-button") Отправить
+    div(class="password-new")
+        p Забыли пароль?
+header
+ div(id="mob-heder")
+  .center
+    .row
+     div(id="mob-menu")
+      div(class="menu_btn")
+       span
+       span
+       span
+      div(class="mob-menu-bl")
+       ul
+         li 
+          a(href="#") ПРИЗЫ 
+         li 
+          a(href="#") ВИКТОРИНА 
+         li 
+          a(href="#") ГДЕ КУПИТЬ 
+         li 
+          a(href="#") ПОБЕДИТЕЛИ 
+         li 
+          a(href="#") ВОПРОС И ОТВЕТ 
+     div(class="mob-logo")
+      a(href="index.html", id="mob-logo")
+     div(class="mob-account")
+      button
+
+ div(id="head-fix")
+  .logo-blocks
+   .center
+    .row
+     div(class="logo col-lg-3 col-md-2")
+      a(href="index.html", id="logo")
+     div(class="menu col-lg-7 col-md-8")
+      ul
+       li 
+        a(href="#") ПРИЗЫ 
+       li 
+        a(href="#") ВИКТОРИНА 
+       li 
+        a(href="#") ГДЕ КУПИТЬ 
+       li 
+        a(href="#") ПОБЕДИТЕЛИ 
+       li 
+        a(href="#") ВОПРОС И ОТВЕТ 
+     div(class="login-bl col-lg-2 col-md-2")
+       a(href="#", class="login-form") Вход
+       span /
+       a(href="#", class="reg-form") Регистрация

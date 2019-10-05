@@ -1,0 +1,412 @@
+
+.login {
+  display: flex;
+}
+
+.login span {
+  color: #ffffff;
+  font-size: 13px;
+  margin-left: -1px;
+  margin-right: 0px;
+}
+.login-form{
+  font-size: 13px;
+  color: #ffffff;
+  font-family: 'Stag Sans Book';
+  cursor: pointer;
+}
+.login-form:hover{
+  color: #a3bcea;
+}
+.reg-form{
+  font-size: 13px;
+  color: #ffffff;
+  font-family: 'Stag Sans Book';
+  cursor: pointer;
+}
+.reg-form:hover{
+  color: #a3bcea;
+}
+/*Registration and Login pop-up form start*/
+.login-form-header{
+  position: absolute;
+  width: 624px;
+  max-height:355px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-image: url("../images/login-fon.png");
+  color: #fff;
+  display: none;
+  border-radius: 20px;
+  z-index: 1;
+  text-align: center;
+  h1{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    color: #000000;
+    font-family: 'Stag Sans Medium';
+    text-align: center;
+  }
+  .athor-login{
+    padding-bottom: 47px;
+    input{
+      text-align: center;
+      border-radius: 50px;
+      padding: 5px;
+      font-size: 18px;
+      color: #000000;
+      font-family: 'Stag Sans Medium';
+      outline: none;
+      border: none;
+    }
+    ::placeholder {
+      text-align: left;
+      color: #000000;
+      padding-left: 5px;
+      font-weight: normal;
+    }
+    input:first-child{
+      margin-right: 25px;
+    }
+  }
+  .button-to-login{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Stag Sans Medium';
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    background-color: #2fa9e5;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .button-to-login:hover{
+    color: black;
+    background-color: #b2d4e4;
+  }
+  .form-links{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    p{
+      font-size: 18px;
+      color: #000000;
+      font-family: 'Stag Sans Medium';
+      cursor: pointer;
+    }
+    p:hover{
+      font-weight: bold;
+    }
+  }
+}
+.register-form-header{
+  position: absolute;
+  width: 624px;
+  height:534px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-image: url("../images/login-fon.png");
+  color: #fff;
+  display: none;
+  border-radius: 20px;
+  z-index: 1;
+  text-align: center;
+  h1{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Stag Sans Medium';
+    text-align: center;
+    padding-top: 51px;
+  }
+  .register-form-block{
+    padding-top: 60px;
+    display: flex;
+    justify-content:space-between;
+    max-width:540px ;
+    margin: auto;
+    input{
+      text-align: center;
+      border-radius: 50px;
+      padding: 5px;
+      font-size: 18px;
+      color: #000000;
+      font-family: 'Stag Sans Medium';
+      outline: none;
+      border: none;
+      margin-bottom: 25px;
+    }
+    ::placeholder {
+      text-align: left;
+      color: #000000;
+      padding-left: 5px;
+      font-weight: normal;
+    }
+  }
+  #reg-button{
+    display: flex;
+    padding-left: 80px ;
+    padding-bottom: 50px;
+    span{
+      max-width: 330px;
+      font-size: 18px;
+      color: #000000;
+      font-family: 'Stag Sans Medium';
+      a{
+        color: #000000;
+      }
+    }
+  }
+}
+.feedback-form{
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-image: url("../images/login-fon.png");
+  color: #fff;
+  display: none;
+  border-radius: 20px;
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+  height:auto;
+
+  #reg-button{
+    display: flex;
+    span{
+      color: #000000;
+      font-family: 'Stag Sans Medium';
+      a{
+        color: #000000;
+      }
+    }
+  }
+  .form-group{
+    padding: 50px;
+  }
+  .box-input{
+    display: flex;
+    justify-content: flex-start;
+    span{
+      font-size: 18px;
+      color: #000000;
+      font-family: "Stag Sans LC";
+    }
+  }
+  .select-form{
+    padding-top: 24px;
+  }
+  .textarea-form{
+    padding-top:24px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    h3{
+      text-align:left;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      font-family: "Stag Sans LC";
+    }
+    textarea{
+      border-radius: 20px;
+      resize: none;
+    }
+  }
+  input{
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Stag Sans Medium';
+    outline: none;
+    border: none;
+  }
+  ::placeholder {
+    text-align: left;
+    color: #000000;
+    padding-left: 5px;
+    font-weight: normal;
+  }
+  .form-login-password{
+    display: flex;
+  }
+  .form-login{
+    padding-right: 25px;
+  }
+
+}
+.send-button{
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Stag Sans Medium';
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  background-color: #2fa9e5;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.send-button:hover{
+  color: black;
+  background-color: #b2d4e4;
+}
+.close-popup-form{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+.close-popup-form:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup-form:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+.password-recover{
+  position: absolute;
+  width: 624px;
+  max-height:355px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-image: url("../images/login-fon.png");
+  color: #fff;
+  display: none;
+  border-radius: 20px;
+  z-index: 1;
+  text-align: center;
+  h1{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Stag Sans Medium';
+    text-align: center;
+    padding-top: 51px;
+    padding-bottom: 60px;
+  }
+  input{
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Stag Sans Medium';
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+  }
+  ::placeholder {
+    text-align: left;
+    color: #000000;
+    padding-left: 5px;
+    font-weight: normal;
+  }
+  .password-new{
+    padding-top: 10px;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Stag Sans Medium';
+    cursor: pointer;
+  }
+
+}
+.box-input{
+  img{
+    width: 20px;
+    height: 25px;
+  }
+  span{
+    text-decoration: underline;
+    color: black;
+    padding-left: 5px;
+  }
+  span:hover{
+    color:#b2d4e4;
+  }
+}
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  max-width: 80%;
+  font-size: 1.25rem;
+  /* 20px */
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  /* 10px 20px */
+}
+.no-js .inputfile + label {
+  display: none;
+}
+.remove-this{
+  display: none;
+}
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+  /* pointer-events: none; */
+  /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  /* 4px */
+  margin-right: 0.25em;
+  /* 4px */
+}
+.inputfile-3 + label {
+  color: #d3394c;
+}
+.inputfile-3:focus + label,
+.inputfile-3.has-focus + label,
+.inputfile-3 + label:hover {
+  color: #722040;
+}
+/*Registration and Login pop-up form end*/

@@ -1,0 +1,670 @@
+.account-head {
+    max-width: 378px;
+    background: #fea40a;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px 0px 18px 0;
+    border-bottom-right-radius: 38px;
+    border-bottom-left-radius: 38px;
+}
+
+.account-head span {
+    font-family: 'Stag Sans Medium';
+    font-size: 29px;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+section.account {
+    background: url(../images/account.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.account-block {
+    padding: 0 83px;
+    padding-bottom: 67px;
+    margin-top: 52px;
+}
+
+.account-block1 {
+    background: url(../images/account1.png)no-repeat;
+    background-position: top center;
+    padding: 36px 37px 0px 58px;
+    background-size: 100%;
+}
+
+.account-name {
+    display: block;
+    font-size: 47px;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 47px;
+    position: relative;
+    font-family: 'Stag Sans Book';
+}
+
+
+.account-name a {
+    background: url(../images/edit.png)no-repeat;
+    width: 30px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 18px;
+    
+}
+
+.account-info {
+    padding: 0;
+}
+
+.account-icon {
+    display: block;
+    font-family: 'Stag Sans Book';
+    color: white;
+    font-size: 26.3px;
+    padding-left: 49px;
+    margin-bottom: 9px;
+    background-repeat: no-repeat !important;
+    background-position: 5px 7px !important;
+}
+
+.account-icon.mail {
+    background: url(../images/mail.png);
+}
+
+.account-icon.phone {
+    background: url(../images/phone.png);
+}
+
+.account-code {
+    padding: 24px 0 0 62px;
+}
+
+.account-code span {
+    font-family: 'Stag Sans Book';
+    display: block;
+    font-size: 70px;
+    line-height: 45px;
+    /* margin-top: -6px; */
+    color: #fea40a;
+    text-align: center;
+}
+
+.account-code span:nth-child(2) {
+    font-size: 47px;
+    margin-top: 1px;
+}
+
+span {}
+
+.account-code-icon {
+    height: 58px;
+    background: url(../images/ico2.png)no-repeat;
+    background-position: center center;
+    margin-top: 19px;
+}
+
+.acoount-btn:after {content: "";display: block;clear: both;text-align: center;}
+
+.acoount-btn {
+    max-width: 533px;
+    margin: 44px auto 0 auto;
+}
+
+.acoount-btn .site-btn {
+    width: 247px !important;
+    height: 57px !important;
+    border-radius: 24px !important;
+    font-size: 25px;
+    letter-spacing: normal !important;
+}
+
+.acoount-btn .jellow-btn {
+    padding-top: 12px !important;
+    color: white !important;
+}
+
+.my_code_h {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-family: 'Stag Sans Book';
+}
+
+
+.my_code .my_code_h {/* padding-right: 72px; *//* margin-bottom: 26px; */}
+
+.my_code {
+    margin-top: 42px;
+    border-bottom: 1px solid white;
+    padding-bottom: 11px;
+}
+
+.my_code_item {
+    padding: 0 0 0 0;
+}
+
+span.my_code_span {
+    background: url(../images/code1.png)no-repeat;
+    display: block;
+    font-size: 20px;
+    background-position: left 0px;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 24px;
+    font-family: 'Stag Sans Book';
+    padding-left: 68px;
+}
+
+.my_code_icon {
+    display: block;
+    color: white;
+    margin-left: 85px;
+    font-family: 'Stag Sans Book';
+    font-size: 20px;
+    line-height: 31px;
+    padding-left: 45px;
+    margin-bottom: 8px;
+    background-repeat: no-repeat !important;
+}
+
+.my_code_row.row {
+    padding-top: 21px;
+    padding-left: 32px;
+    padding-right: 46px;
+}
+
+span.my_code_span:first-child {
+    margin-top: 3px;
+}
+
+span.my_code_icon.accept {
+    background: url(../images/code2.png);
+    background-position: 4px 7px;
+}
+
+span.my_code_icon.not_accept {
+    background: url(../images/code3.png);
+    background-position: 5px 5px;
+}
+
+span.my_code_icon.process {
+    background: url(../images/code4.png);
+    background-position: 1px 0px;
+}
+
+span.my_code_date {
+    display: block;
+    color: white;
+    text-align: right;
+    font-family: 'Stag Sans Book';
+    letter-spacing: 0.01em;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+
+.my_code_all a {
+    font-family: 'Stag Sans Book';
+    font-size: 16px;
+    color: ghostwhite;
+    /* display: block; */
+    text-align: center;
+}
+
+.my_code_all {
+    /* padding-right: 71px; */
+    margin: 12px auto 0 auto;
+    text-align: center;
+}
+
+.account-block1>.row {
+    padding: 0px 0px 0 32px;
+}
+
+.account-block2 {
+    background: url(../images/account2.png)no-repeat;
+    background-position: bottom center;
+    padding: 24px 31px 33px 0px;
+    background-size: 100%;
+}
+
+.account-prize-head {
+    color: white;
+    font-size: 17px;
+    /* text-align: center; */
+    margin-bottom: 26px;
+    font-family: 'Stag Sans Light';
+}
+
+.account-block2 > .row:nth-child(2){
+    margin-top: 17px;
+}
+.account-block2 .row button {position: relative;top: -7px;}
+
+.account-prize:nth-child(4n+1){
+    padding: 0 0 0 90px;
+}
+
+.account-prize {
+    padding: 0;
+}
+
+.account-prize:nth-child(4n+2) {
+    padding: 0 0 0 27px;
+}
+
+.account-prize:nth-child(4n+4) {
+    padding: 0 0 0 0px;
+}
+
+.account-prize-text {
+    font-family: 'Stag Sans Book';
+    font-size: 20px;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.account-prize-btn {/* text-align: center; */max-width: 147px;margin: 0 auto;padding-left: 16px;}
+
+.account-prize-btn button {
+    display: block;
+    font-family: 'Stag Sans Book';
+    background: #fea40a;
+    font-size: 14px;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 7px  0px 3px 0;
+    color: white;
+    border: none !important;
+}
+@media(min-width:768px){
+    .my_code_row-mob {
+    display: none;
+}
+.account-block2 .my_code_h {
+    padding-left: 50px;
+}
+.row-mob {
+    display: none;
+}
+}
+/*.account-block1*/
+@media(max-width:767px){ 
+
+section.account {
+    position: relative;
+    padding-top: 17px;
+}
+
+section.account:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 17px;
+    left: 0;
+    background: #fea40a;
+}
+
+.account-head {
+    padding-top: 19px;
+}
+
+.account-block {
+    margin-top: 74px;
+    padding: 0 34px;
+}
+
+.account-block1 {
+    background: url(../images/account1-m.png) no-repeat !important;
+    background-position: top center !important;
+    padding: 75px 36px 0px 9px;
+    background-size: 100% !important;
+}
+
+span.account-name {
+    font-size: 39px !important;
+    margin-bottom: 49px;
+}
+
+span.account-icon {
+    font-size: 33px;
+    padding-left: 59px;
+    /* background-size: 29px 25px !important; */
+    background-position: 3px 10px !important;
+    margin-bottom: 11px;
+}
+
+span.account-icon.mail {
+    background-size: 31px 24px !important;
+}
+
+span.account-icon.phone {
+    background-size: 33px 34px !important;
+}
+
+.account-block1 > .row {
+    padding: 0 !important;
+}
+
+.account-info.col-md-8 {
+    padding-left: 32px;
+}
+
+.account-code.col-md-4 {
+    padding: 56px 0 0 26px;
+}
+
+.account-code span {
+    font-size: 83px;
+    line-height: 80px;
+    /* padding-left: 26px; */
+}
+
+.account-code span:nth-child(2) {
+    font-size: 64px;
+    margin-top: -18px;
+}
+
+.account-code-icon {margin-top: 9px;background-size: 142px !important;height: 67px;}
+
+.acoount-btn .site-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 32px !important;
+    border-radius: 40px !important;
+    display: block;
+    float: unset !important;
+    height: 74px !important;
+    margin-bottom: 20px;
+    width: 323px !important;
+}
+
+.acoount-btn {
+    margin-top: 53px !important;
+    padding-left: 27px;
+}
+
+.my_code {
+    margin-top: 80px;
+}
+
+.my_code .my_code_h {
+    font-size: 35px;
+    padding-left: 22px;
+}
+
+
+}
+
+/*.account-block2*/
+@media(max-width:767px){
+.my_code_row.row {
+    display: none;
+}
+
+.my_code_all {
+    display: none;
+}
+
+span.my_code_span {
+    background-size: 87px;
+    background-position: left 0px !important;
+    font-size: 33px;
+    padding-top: 1px;
+    margin-left: 53px;
+    padding-left: 102px;
+    line-height: 40px;
+}
+
+.my_code_item_mob {
+    padding-top: 46px;
+    padding-left: 34px;
+    padding-right: 10px;
+    margin-bottom: -13px;
+}
+
+span.my_code_span {
+}
+
+span.my_code_icon.accept {
+    margin-left: 160px;
+    line-height: 35px;
+    font-size: 33px;
+    background-size: 34px;
+    background-position: left 10px;
+    padding-left: 44px;
+    padding-top: 8px;
+}
+
+span.my_code_date {
+    text-align: left;
+    padding-left: 102px;
+    font-size: 33px;
+    padding-top: 12px;
+    border-bottom: 1px solid white;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+span.my_code_icon.not_accept {
+    margin-left: 160px;
+    line-height: 35px;
+    font-size: 33px;
+    background-size: 32px;
+    background-position: left 10px;
+    padding-left: 44px;
+    padding-top: 8px;
+}
+
+span.my_code_icon.process {
+    margin-left: 160px;
+    line-height: 35px;
+    font-size: 33px;
+    background-size: 34px;
+    background-position: left 10px;
+    padding-left: 44px;
+    padding-top: 8px;
+}
+
+.my_code {
+    border: none !important;
+}
+
+.account-block2 > .row {
+    display: none;
+}
+
+.account-block2 {
+    padding: 49px 0 1px 0;
+    margin-bottom: 0px;
+    background: url(../images/account2-m.png) no-repeat !important;
+    background-position: bottom center !important;
+    background-size: 100% !important;
+}
+
+.account-block2 .my_code_h {
+    font-size: 35px;
+}
+
+.account-prize-mob {
+    text-align: center;
+    padding-bottom: 43px;
+    border-bottom: 1px solid white;
+    margin-bottom: 37px;
+}
+
+.account-prize-head {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.account-prize-text {
+    font-size: 33px;
+}
+
+.account-prize-head:first-child {
+    margin-bottom: 20px;
+}
+
+.account-prize-btn {
+    margin-top: 63px;
+    max-width: 251px;
+    padding: 0;
+}
+
+.account-prize-btn button {
+    padding: 7px 0px 8px 0;
+    font-size: 25px;
+    border-radius: 30px;
+}
+
+.row-mob {
+    padding-top: 34px;
+}
+
+.account-prize-mob:last-child {
+    border: none;
+}
+}
+
+@media(max-width:550px){
+    
+.my_code_item_mob {
+   
+  padding-left: 0;
+}
+.account-block {
+    padding: 0;
+    }
+}
+
+@media(max-width:500px){
+    .account-head span {
+
+    font-size: 20px;
+}
+
+span.account-name {
+    font-size: 22px !important;
+    margin-bottom: 20px;
+}
+
+.account-info.col-md-8 {
+    padding-left: 0 !important;
+}
+
+.account-block1 {
+    padding-right: 10px !important;
+    padding-top: 30px !important;
+}
+
+span.account-icon {
+    font-size: 18px;
+    background-size: 25px 20px !important;
+    background-position: left center !important;
+    padding-left: 40px;
+    line-height: 40px;
+}
+
+.account-code.col-md-4 {
+    padding: 20px 0 0 0;
+}
+
+.account-code span {
+    font-size: 50px;
+    line-height: 50px;
+    /* margin-bottom: 20px; */
+}
+
+.account-code span:nth-child(2) {
+    font-size: 38px;
+    line-height: 40px;
+    margin-top: 0 !important;
+}
+
+.account-code-icon {
+    background-size: 100px !important;
+    margin-top: 5px;
+}
+
+.acoount-btn .site-btn {
+    width: 100% !important;
+    font-size: 20px !important;
+    height: 50px !important;
+}
+
+.my_code {
+    margin-top: 40px;
+}
+
+span.my_code_span {
+    font-size: 20px;
+    padding-left: 40px;
+    background-size: 38px;
+    background-position: center left!important;
+    margin-left: 30px;
+}
+
+span.my_code_icon.accept {
+    font-size: 20px;
+    margin-left: 50px;
+    background-size: 25px;
+    padding-left: 30px;
+    background-position: center left !important;
+}
+
+span.my_code_date {
+    font-size: 20px;
+    padding-left: 70px !important;
+}
+
+span.my_code_icon.not_accept {
+    font-size: 20px;
+    margin-left: 50px;
+    background-size: 25px;
+    padding-left: 30px;
+    background-position: center left !important;
+}
+
+span.my_code_icon.process {
+    font-size: 20px;
+    margin-left: 50px;
+    background-size: 25px;
+    padding-left: 30px;
+    background-position: center left !important;
+}
+
+.account-prize-head {
+    font-size: 22px;
+}
+
+.account-prize-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.account-prize-btn {
+    margin-top: 40px;
+}
+
+.account-prize-btn button {
+    color: black;
+}
+
+}
+@media(max-width:992px){
+    .account-block {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.account-prize.col-md-3 {
+    padding-left: 10px !important;
+}
+}

@@ -1,0 +1,306 @@
+section.club-prize {
+    background: url(../images/prize-bg.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 43px 0 46px 0;
+    margin-top: 11px;
+    .popup-ball{
+        justify-content: center;
+        position: absolute;
+        width: 624px;
+        height:831px;
+        left: 50%;
+        top: 51%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        background-image: url("../images/fon-ball.png");
+        color: #fff;
+        display: none;
+        border-radius: 20px;
+        z-index: 1;
+        h1{
+            font-size: 24px;
+            color: #ffffff;
+            font-family: 'Stag Sans Medium';
+            font-weight: 500;
+            text-align: center;
+            padding-top: 40px;
+        }
+        p{
+            font-size: 18px;
+            color: #ffffff;
+            font-family: 'Stag Sans Medium';
+            text-align: center;
+            width: 80%;
+            padding-top: 10px;
+            margin: auto;
+        }
+        .img-ball-div{
+            background-color: #fff;
+            width: 80%;
+            height: 55%;
+            margin: auto;
+            border-radius: 10px;
+            text-align:center;
+            img{
+                padding-top: 20px;
+
+            }
+        }
+    }
+
+    .close-popup-ball {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+    }
+
+    .close-popup-ball:before {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        height: 1px;
+        width: 31px;
+        top: 11px;
+        left: -4px;
+        transform: rotate(-45deg);
+    }
+
+    .close-popup-ball:after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        height: 1px;
+        width: 31px;
+        top: 11px;
+        transform: rotate(45deg);
+        left: -4px;
+    }
+}
+
+a.register-form-open {
+    text-decoration: none;
+}
+.club-prize-head {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Stag Sans Medium';
+    letter-spacing: 0.1em;
+}
+
+p.club-prize-block-h {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Stag Sans Book';
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+
+.club-prize-block {
+    padding: 49px 50px 0 50px;
+}
+
+p.club-prize-item-head {
+    color: white;
+    font-family: 'Stag Sans Book';
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.club-prize-block1.two-items {
+    max-width: 673px;
+    margin: 0 auto;
+}
+
+.club-prize-item.col-md-6 {
+    padding: 15px 0 0 0;
+}
+
+.club-prize-item.col-md-6:last-child {
+    padding-left: 38px;
+}
+
+.club-prize-icon {}
+
+.club-prize-item.col-md-6 .club-prize-icon {
+    background: url(../images/prize.png);
+    background-position: center 5px !important;
+}
+
+.club-prize-icon {
+    height: 95px;
+    background-repeat: no-repeat !important;
+}
+
+.club-prize-item.col-md-6:last-child .club-prize-icon {
+    background: url(../images/prize2.png);
+    background-position: center top !important;
+}
+
+p.club-prize-item-txt {
+    color: white;
+    font-family: 'Stag Sans Medium';
+    font-size: 37px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 17px;
+    line-height: 33px;
+}
+
+a.club-prize-item-link {
+    color: white;
+    /* text-decoration: none; */
+    display: block;
+    text-align: center;
+    font-family: 'Stag Sans Light';
+    font-size: 18px;
+    /* line-height: 32px; */
+    margin-top: 1px;
+}
+
+.club-prize-block1.three-items {
+    padding-top: 41px !important;
+    padding: 0 12px 0 12px;
+}
+
+.club-prize-item.col-md-4:nth-child(1) .club-prize-icon {
+    background: url(../images/prize3.png);
+    background-position: center 15px !important;
+}
+.club-prize-item.col-md-4:nth-child(2) .club-prize-icon {
+    background: url(../images/prize4.png);
+}
+.club-prize-item.col-md-4:nth-child(3) .club-prize-icon {
+    background: url(../images/prize5.png);
+}
+
+.club-prize-item.col-md-4 .club-prize-icon {
+    height: 140px;
+    background-position: center center !important;
+    margin-bottom: -3px;
+}
+
+.club-prize-item.col-md-4 {
+    padding: 28px 0 0 3px;
+}
+
+.club-prize-block1.three-items p.club-prize-item-txt {
+    margin-bottom: 6px;
+}
+
+.club-prize-item.col-md-4:nth-child(3) {
+    padding-right: 15px;
+}
+
+.club-prize-item.col-md-4:nth-child(2) {
+    padding-right: 19px;
+}
+
+
+@media(max-width:767px){
+    .club-prize-icon {
+    background-position: center center !important;
+}
+
+.club-prize-item.col-md-6 {
+    padding-left: 0 !important;
+}
+
+.club-prize-block {padding-left: 0 !important;padding-right: 0 !important;}
+
+.club-prize-head {
+    font-size: 37px;
+    max-width: 400px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.club-prize {
+    padding-top: 83px;
+}
+
+p.club-prize-block-h {
+    font-size: 33px;
+    margin-bottom: 47px;
+}
+
+.club-prize-block {
+    padding-top: 55px;
+}
+
+p.club-prize-item-head {
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.club-prize-item.col-md-6 .club-prize-icon {
+    background-size: 178px 113px;
+    height: 120px;
+    margin-bottom: 38px;
+}
+
+p.club-prize-item-txt {
+    font-size: 49px;
+    line-height: 42px;
+}
+
+a.club-prize-item-link {
+    font-size: 29px;
+    margin-top: 6px;
+}
+
+.club-prize-item.col-md-6 {
+    margin-bottom: 44px;
+}
+
+.club-prize-item.col-md-6:last-child .club-prize-icon {
+    background-size: 181px;
+    background-position: center 8px !important;
+    height: 137px !important;
+    margin-bottom: 29px;
+}
+
+.club-prize-item.col-md-4 {
+    padding-top: 8px;
+    margin-bottom: 72px;
+}
+
+.club-prize-item.col-md-4:nth-child(1) .club-prize-icon {
+    background-size: 159px !important;
+    height: 175px;
+    margin-bottom: 28px;
+}
+
+.club-prize-item.col-md-4:nth-child(2) .club-prize-icon {
+    background-size: 177px;
+    background-position: center center !important;
+    height: 184px;
+    margin-bottom: 20px;
+}
+
+.club-prize-item.col-md-4:nth-child(2) {
+    padding-right: 0 !important;
+}
+
+.club-prize-item.col-md-4:nth-child(3) .club-prize-icon {
+    background-size: 182px;
+    background-position: center center !important;
+    height: 190px;
+    margin-bottom: 10px;
+}
+
+.club-prize-item.col-md-4 {
+    padding-left: 0 !important;
+}
+
+.club-prize-item.col-md-4:nth-child(3) {
+    padding-right: 0 !important;
+}
+}

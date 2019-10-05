@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Stag Sans Medium';
+  src: url('../font/Stag_Sans_LC-Medium.otf');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Stag Sans Book';
+  src: url('../font/StagSansLC-Book.otf');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Stag Sans Light';
+  src: url('../font/StagSans-Light-Cy-Gr-Web.woff2');
+} 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Regular.eot');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Montserrat-Regular.woff') format('woff'),
+    url('../font/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,43 @@
+section.victorina {
+    padding-top: 28px;
+    background: #fea40a;
+}
+
+h3 {}
+
+.victorina-block h3 {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Stag Sans Medium';
+    margin: 0;
+}
+
+.vic-icon {
+    height: 155px;
+    /* background-position: center center !important; */
+    margin-top: 30px;
+    max-width: 231px;
+    background-repeat: no-repeat !important;
+}
+
+.victorina-block {
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+.victorina-item {
+    padding: 0 0 0 0;
+}
+
+.victorina-item:nth-child(2) div {
+    background: url(images/victorina-icon1.png);
+}
+
+.victorina-item:nth-child(3) div {
+    background: url(images/victorina-icon2.png);
+}
+
+.victorina-item:nth-child(4) div {
+    background: url(images/victorina-icon3.png);
+}
