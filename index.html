@@ -1,682 +1,661 @@
 <!DOCTYPE html >
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="format-detection" content="telephone=no"/>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/autosize.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery.hashtags.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"/>
     <link rel="stylesheet" href="css/bootstrap-tagsinput.css"/>
     <link rel="stylesheet" href="css/jquery.hashtags.min.css"/>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="js/bootstrap-tagsinput.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a195d57-dcaa-4b51-9aa7-5052e3ce2318"
-            type="text/javascript"></script>
-    <!--    6a195d57-dcaa-4b51-9aa7-5052e3ce2318-->
-    <link rel="stylesheet" href="css/styles.css"/>
-<body>
-<div class="login-form-header">
-    <h1>АВТОРИЗАЦИЯ</h1>
-    <form>
-        <div class="close-popup-form"></div>
-        <div class="athor-login">
-            <input type="text" placeholder="Логин"/>
-            <input type="password" placeholder="Пароль"/>
-        </div>
-        <div class="login-button">
-            <div class="button-to-login">Войти</div>
-        </div>
-        <div class="form-links">
-            <div class="password-forgot">
-                <p>Забыли пароль?</p>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=hhhjhjhhjjj&amp;lang=ru_RU" type="text/javascript"></script>
+    <body>
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content feedback-form">
+            <div class="modal-header">
+              <button class="close close-popup-form" data-dismiss="modal"></button>
             </div>
-            <a class="register-form-open" href="JavaScript:void(0);">
-                <p>Регистрация</p></a>
-        </div>
-    </form>
-</div>
-<div class="register-form-header error-mail">
-    <h1>РЕГИСТРАЦИЯ</h1>
-    <p class="error-email">Пользователь с такой почтой уже существует</p>
-    <form>
-        <div class="close-popup-form"></div>
-        <div class="register-form-block" style="flex-direction: column">
-            <div class="d-flex">
-                <div class="register-form-block-1">
-                <span class="not-valid input-margin"><input type="text" placeholder="Имя"/>
-                <p class="error-inside">ERORR</p></span>
-                    <span class="not-valid input-margin"><input type="text" placeholder="Отчество"/>
-                <p class="error-inside">ERORR</p></span>
-                    <span class="not-valid input-margin"> <input type="number" placeholder="Телефон"/>
-                <p class="error-inside">ERORR</p></span>
-                    <span class="not-valid input-margin"> <input type="text" placeholder="Город"/>
-                <p class="error-inside">ERORR</p></span>
-                    <span class="not-valid input-margin"><input type="password" placeholder="Пароль"/>
-                <p class="error-inside">ERORR</p></span>
+            <div class="modal-body">
+              <form class="form-group">
+                <div class="form-login-password">
+                  <div class="row">
+                    <div class="form-login col-xs-6">
+                      <input type="text" placeholder="Логин"/>
+                    </div>
+                    <div class="form-password col-xs-6">
+                      <input type="email" placeholder="E-mail"/>
+                    </div>
+                  </div>
                 </div>
-                <div class="register-form-block-2">
-                      <span class="not-valid input-margin">
-                    <input type="text" placeholder="Фамилия"/>
-                           <p class="error-inside">ERORR</p></span>
-                    <div class="d-flex radio-buttons">
+                <div class="select-form">
+                  <select class="tags-select form-control">
+                    <option disabled="disabled" selected="selected">Тема</option>
+                    <option>Option 1</option>
+                    <option>Option 1</option>
+                    <option>Option 1</option>
+                    <option>Option 1</option>
+                    <option>Option 1</option>
+                  </select>
+                </div>
+                <div class="textarea-form">
+                  <h3>Текст</h3>
+                  <textarea class="form-control form-rounded" id="exampleFormControlTextarea1" rows="10" cols="10"></textarea>
+                </div>
+                <div class="box-input">
+                  <input class="inputfile inputfile-3 no-js remove-this" type="file" name="file-3[]" id="file-3" data-multiple-caption="{count} files selected" multiple="multiple"/>
+                  <label for="file-3"><img src="images/file-open.png"/><span>Прикрепить файл</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3" id="reg-button">
+                  <input class="custom-control-input " type="checkbox" id="customCheck" name="defaultGroup"/>
+                  <label class="custom-control-label" for="customCheck"><span>Я согласен с &nbsp;<a href="#">Правилами акции</a></span></label>
+                </div>
+                <div class="register-send-button">
+                  <div class="send-button">Отправить</div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content login-form-header">
+            <div class="modal-header">
+              <h1>АВТОРИЗАЦИЯ</h1>
+              <button class="close close-popup-form" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="athor-login">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <input type="text" placeholder="Логин"/>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="password" placeholder="Пароль"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="login-button">
+                  <div class="button-to-login">Войти</div>
+                </div>
+                <div class="form-links">
+                  <div class="password-forgot" data-toggle="modal" data-target="#myModal3">
+                    <p>Забыли пароль?</p>
+                  </div><span data-toggle="modal" data-target="#myModal2">
+                    <p>Регистрация</p></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content register-form-header">
+            <div class="modal-header">
+              <h1>РЕГИСТРАЦИЯ</h1>
+              <p class="error-email">Пользователь с такой почтой уже существует</p>
+              <button class="close close-popup-form" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="register-form-block">
+                  <div class="row">
+                    <div class="register-form-block-1 col-xs-6"><span class="not-valid input-margin">
+                        <input type="text" placeholder="Имя"/>
+                        <p class="error-inside">ERORR</p></span><span class="not-valid input-margin">
+                        <input type="text" placeholder="Отчество"/>
+                        <p class="error-inside">ERORR</p></span><span class="not-valid input-margin">
+                        <input type="number" placeholder="Телефон"/>
+                        <p class="error-inside">ERORR</p></span><span class="not-valid input-margin">
+                        <input type="text" placeholder="Город"/>
+                        <p class="error-inside">ERORR</p></span><span class="not-valid input-margin">
+                        <input type="password" placeholder="Пароль"/>
+                        <p class="error-inside">ERORR</p></span></div>
+                    <div class="register-form-block-2 col-xs-6"><span class="not-valid input-margin">
+                        <input type="text" placeholder="Фамилия"/>
+                        <p class="error-inside">ERORR</p></span>
+                      <div class="d-flex radio-buttons">
                         <p class="radio-first">
-                            <input type="radio" id="test1" name="radio-group" checked>
-                            <label for="test1">Муж.</label>
+                          <input type="radio" id="test1" name="radio-group" checked="checked"/>
+                          <label for="test1">Муж.</label>
                         </p>
                         <p class="radio-second">
-                            <input type="radio" id="test2" name="radio-group">
-                            <label for="test2">Жен.</label>
+                          <input type="radio" id="test2" name="radio-group"/>
+                          <label for="test2">Жен.</label>
                         </p>
+                      </div><span class="not-valid input-margin">
+                        <input type="text" id="datepicker" placeholder="Дата Рождения"/>
+                        <p class="error-inside">ERORR</p></span><span class="not-valid input-margin">
+                        <input type="email" placeholder="E-mail"/>
+                        <p class="error-inside">ERORR</p></span><span class="not-valid input-margin">
+                        <input type="password" placeholder="Пароль еще раз"/>
+                        <p class="error-inside">ERORR</p></span>
                     </div>
-                    <span class=" input-margin">
-                <input type="text" id="datepicker" placeholder="Дата Рождения"/>
-                          <p class="error-inside">ERORR</p></span>
-                    <span class="not-valid input-margin">
+                  </div>
+                </div>
+                <div class="custom-control-label">
+                  <input type="checkbox" id="checkbox"/>
+                  <label for="checkbox">Я согласен с Правилами акции"Пользовательским соглашением</label>
+                </div>
+                <div class="register-send-button">
+                  <div class="send-button">Отправить</div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content password-recover">
+            <div class="modal-header">
+              <h1>ВОССТАНОВЛЕНИЕ ПАРОЛЯ</h1>
+              <button class="close close-popup-form" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form>
                 <input type="email" placeholder="E-mail"/>
-                           <p class="error-inside">ERORR</p></span>
-                    <span class="not-valid input-margin">
-                <input type="password" placeholder="Пароль еще раз"/>
-                <p class="error-inside">ERORR</p></span>
-                </div>
+              </form>
+              <div class="register-send-button">
+                <div class="send-button">Отправить</div>
+              </div>
+              <div class="password-new">
+                <p>Забыли пароль?</p>
+              </div>
             </div>
-            <div class="custom-control-label">
-                <input type="checkbox" id="checkbox"/>
-                <label for="checkbox"></label>
-                Я согласен с Правилами акции"Пользовательским соглашением
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content popup-ball">
+            <div class="modal-header">
+              <h1>МЯЧ С АВТОГРАФОМ</h1>
+              <button class="close close-popup-form" data-dismiss="modal"></button>
             </div>
+            <div class="modal-body">
+              <form>
+                <div class="img-ball-div"><img src="images/ball-1.png"/></div>
+                <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur deserunt dolorem ea esse, expedita impedit itaque minima nobis odit perferendis possimus quibusdam ratione rem repellendus sequi sit velit voluptatem!</p>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="register-send-button">
-            <div class="send-button">Отправить</div>
-        </div>
-    </form>
-</div>
-<div class="password-recover">
-    <div class="close-popup-form"></div>
-    <h1>ВОССТАНОВЛЕНИЕ ПАРОЛЯ</h1>
-    <form>
-        <input type="email" placeholder="E-mail"/>
-    </form>
-    <div class="register-send-button">
-        <div class="send-button">Отправить</div>
-    </div>
-    <div class="password-new">
-        <p>Забыли пароль?</p>
-    </div>
-</div>
-<header>
-    <div id="mob-heder">
-        <div class="center">
+      </div>
+      <header>
+        <div id="mob-heder">
+          <div class="center">
             <div class="row">
-                <div id="mob-menu">
-                    <div class="menu_btn"><span></span><span></span><span></span></div>
-                    <div class="mob-menu-bl">
-                        <ul>
-                            <li><a href="#">ПРИЗЫ </a></li>
-                            <li><a href="#">ВИКТОРИНА </a></li>
-                            <li><a href="#">ГДЕ КУПИТЬ </a></li>
-                            <li><a href="#">ПОБЕДИТЕЛИ </a></li>
-                            <li><a href="#">ВОПРОС И ОТВЕТ </a></li>
-                        </ul>
-                    </div>
+              <div id="mob-menu">
+                <div class="menu_btn"><span></span><span></span><span></span></div>
+                <div class="mob-menu-bl">
+                  <ul>
+                    <li> <a href="#">ПРИЗЫ </a></li>
+                    <li> <a href="#">ВИКТОРИНА </a></li>
+                    <li> <a href="#">ГДЕ КУПИТЬ </a></li>
+                    <li> <a href="#">ПОБЕДИТЕЛИ </a></li>
+                    <li> <a href="#">ВОПРОС И ОТВЕТ </a></li>
+                  </ul>
                 </div>
-                <div class="mob-logo"><a href="index.html" id="mob-logo"></a></div>
-                <div class="mob-account">
-                    <button></button>
-                </div>
+              </div>
+              <div class="mob-logo"><a href="index.html" id="mob-logo"></a></div>
+              <div class="mob-account">
+                <button></button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div id="head-fix">
-        <div class="logo-blocks">
+        <div id="head-fix">
+          <div class="logo-blocks">
             <div class="center">
-                <div class="row">
-                    <div class="logo col-lg-3 col-md-2"><a href="index.html" id="logo"></a></div>
-                    <div class="menu col-lg-7 col-md-8">
-                        <ul>
-                            <li><a href="#">ПРИЗЫ </a></li>
-                            <li><a href="#">ВИКТОРИНА </a></li>
-                            <li><a href="#">ГДЕ КУПИТЬ </a></li>
-                            <li><a href="#">ПОБЕДИТЕЛИ </a></li>
-                            <li><a href="#">ВОПРОС И ОТВЕТ </a></li>
-                        </ul>
-                    </div>
-                    <div class="login-bl col-lg-2 col-md-2"><a class="login-form"
-                                                               href="JavaScript:void(0);">Вход</a><span>/</span><a
-                            class="reg-form" href="JavaScript:void(0);">Регистрация</a></div>
+              <div class="row">
+                <div class="logo col-lg-3 col-sm-2"><a href="index.html" id="logo"></a></div>
+                <div class="menu col-lg-7 col-sm-8">
+                  <ul>
+                    <li> <a href="#">ПРИЗЫ </a></li>
+                    <li> <a href="#">ВИКТОРИНА </a></li>
+                    <li> <a href="#">ГДЕ КУПИТЬ </a></li>
+                    <li> <a href="#">ПОБЕДИТЕЛИ </a></li>
+                    <li> <a href="#">ВОПРОС И ОТВЕТ </a></li>
+                  </ul>
                 </div>
+                <div class="login-bl col-lg-2 col-sm-2"><span class="login-form" data-toggle="modal" data-target="#myModal">Вход</span><span>/</span><span class="reg-form" data-toggle="modal" data-target="#myModal2">Регистрация</span></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</header>
-<section class="content">
-    <div class="center">
-        <div class="content-block">
+      </header>
+      <section class="content">
+        <div class="center">
+          <div class="content-block">
             <div>
-                <h3>По дороге с любимой командой!</h3>
-                <div class="content-text">Регистрируй коды с продукции Continental и выигрывай уникальные подарки.</div>
+              <h3>По дороге с любимой командой!</h3>
+              <div class="content-text">Регистрируй коды с продукции Continental и выигрывай уникальные подарки.</div>
             </div>
-            <form action="" class="content-btn"><input class="white-btn site-btn" placeholder="Загрузить код"><a
-                    class="jellow-btn site-btn" href="JavaScript:void(0);">Отправить</a></form>
+            <div class="content-btn">
+              <form action="">
+                <input class="white-btn site-btn" placeholder="Загрузить код"/><a class="jellow-btn site-btn" href="JavaScript:void(0);">Отправить</a>
+              </form>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="content-footer">
-        <div class="center-mini">
+        <div class="content-footer">
+          <div class="center-mini">
             <div class="row"><a class="content-link col-md-4" href="#">
                 <div class="icon-block"></div>
-                <p>КУПИ</p><span>комплект шин (4 шт) <br/>Continental</span></a><a class="content-link col-md-4"
-                                                                                   href="#">
+                <p>КУПИ</p><span>комплект шин (4 шт) <br/>Continental</span></a><a class="content-link col-md-4" href="#">
                 <div class="icon-block"></div>
                 <p>ЗАРЕГИСТРИРУЙ</p><span>
                    код с купона и стань <br/>участником акции</span></a><a class="content-link col-md-4" href="#">
                 <div class="icon-block"></div>
                 <p>ВЫИГРАЙ</p><span>
                    уникальные<br/>призы</span></a></div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="cont-footer">
-    <div class="center-mini">
-        <div class="row"><a class="content-link col-md-4" href="#">
-            <div class="icon-block"></div>
-            <p>КУПИ</p><span>комплект шин (4 шт) <br/>Continental</span></a><a class="content-link col-md-4" href="#">
-            <div class="icon-block"></div>
-            <p>ЗАРЕГИСТРИРУЙ</p><span>
+      </section>
+      <section class="cont-footer">
+        <div class="center-mini">
+          <div class="row"><a class="content-link col-md-4" href="#">
+              <div class="icon-block"></div>
+              <p>КУПИ</p><span>комплект шин (4 шт) <br/>Continental</span></a><a class="content-link col-md-4" href="#">
+              <div class="icon-block"></div>
+              <p>ЗАРЕГИСТРИРУЙ</p><span>
                  код с купона и стань <br/>участником акции</span></a><a class="content-link col-md-4" href="#">
-            <div class="icon-block"></div>
-            <p>ВЫИГРАЙ</p><span>
+              <div class="icon-block"></div>
+              <p>ВЫИГРАЙ</p><span>
                  уникальные<br/>призы</span></a></div>
-    </div>
-</section>
-<section class="account">
-    <div class="center">
-        <div class="account-head"><span>ЛИЧНЫЙ КАБИНЕТ</span></div>
-        <div class="account-block">
+        </div>
+      </section>
+      <section class="account">
+        <div class="center">
+          <div class="account-head"><span>ЛИЧНЫЙ КАБИНЕТ</span></div>
+          <div class="account-block">
             <div class="account-block1">
-                <div class="row">
-                    <div class="account-info col-md-8"> <span class="account-name">
-                     Константин Николаевич Владимиров<a href="#"></a></span><span class="account-icon mail">konstantin@mail.ru</span><span
-                            class="account-icon phone">+7 999 877 6633</span></div>
-                    <div class="account-code col-md-4"><span>3</span><span>кода</span>
-                        <div class="account-code-icon"></div>
-                    </div>
+              <div class="row">
+                <div class="account-info col-md-8"> <span class="account-name">
+                     Константин Николаевич Владимиров<a href="#"></a></span><span class="account-icon mail">konstantin@mail.ru</span><span class="account-icon phone">+7 999 877 6633</span></div>
+                <div class="account-code col-md-4"><span>3</span><span>кода</span>
+                  <div class="account-code-icon"></div>
                 </div>
-                <form action="" class="acoount-btn">
-                    <input class="white-btn site-btn" placeholder="Загрузить код">
-                    <a class="jellow-btn site-btn" href="JavaScript:void(0);">Отправить</a></form>
-                <div class="my_code">
-                    <div class="my_code_h">Мои коды</div>
-                    <div class="my_code_row row">
-                        <div class="my_code_item col-md-4"><span class="my_code_span">37289892898323</span><span
-                                class="my_code_span">37289892898323</span><span
-                                class="my_code_span">37289892898323</span></div>
-                        <div class="my_code_item col-md-4"><span class="my_code_icon accept">Принят</span><span
-                                class="my_code_icon not_accept">Не принят</span><span class="my_code_icon process">Обрабатывается</span>
-                        </div>
-                        <div class="my_code_item col-md-4"><span class="my_code_date">05.07.2019  10:00 </span><span
-                                class="my_code_date">05.07.2019  10:00</span><span class="my_code_date">05.07.2019  10:00 </span>
-                        </div>
-                    </div>
-                    <div class="my_code_all"><a href="JavaScript:void(0);">Показать все коды ></a></div>
-                    <div class="my_code_row-mob">
-                        <div class="my_code_item_mob"><span class="my_code_span">37289892898323</span><span
-                                class="my_code_icon accept">Принят</span><span
-                                class="my_code_date">05.07.2019  10:00 </span></div>
-                        <div class="my_code_item_mob"><span class="my_code_span">37289892898323</span><span
-                                class="my_code_icon not_accept">Не принят</span><span class="my_code_date">05.07.2019  10:00 </span>
-                        </div>
-                        <div class="my_code_item_mob"><span class="my_code_span">37289892898323</span><span
-                                class="my_code_icon process">Обрабатывается</span><span class="my_code_date">05.07.2019  10:00 </span>
-                        </div>
-                    </div>
+              </div>
+              <div class="acoount-btn">
+                <form action="">
+                  <input class="white-btn site-btn" placeholder="Загрузить код"/><a class="jellow-btn site-btn" href="JavaScript:void(0);">Отправить</a>
+                </form>
+              </div>
+              <div class="my_code">
+                <div class="my_code_h">Мои коды</div>
+                <div class="my_code_row row">
+                  <div class="my_code_item col-md-4"><span class="my_code_span">37289892898323</span><span class="my_code_span">37289892898323</span><span class="my_code_span">37289892898323</span></div>
+                  <div class="my_code_item col-md-4"><span class="my_code_icon accept">Принят</span><span class="my_code_icon not_accept">Не принят</span><span class="my_code_icon process">Обрабатывается</span></div>
+                  <div class="my_code_item col-md-4"><span class="my_code_date">05.07.2019  10:00 </span><span class="my_code_date">05.07.2019  10:00</span><span class="my_code_date">05.07.2019  10:00 </span></div>
                 </div>
+                <div class="my_code_all"><a href="#">Показать все коды ></a></div>
+                <div class="my_code_row-mob">
+                  <div class="my_code_item_mob"><span class="my_code_span">37289892898323</span><span class="my_code_icon accept">Принят</span><span class="my_code_date">05.07.2019  10:00 </span></div>
+                  <div class="my_code_item_mob"><span class="my_code_span">37289892898323</span><span class="my_code_icon not_accept">Не принят</span><span class="my_code_date">05.07.2019  10:00 </span></div>
+                  <div class="my_code_item_mob"><span class="my_code_span">37289892898323</span><span class="my_code_icon process">Обрабатывается</span><span class="my_code_date">05.07.2019  10:00 </span></div>
+                </div>
+              </div>
             </div>
             <div class="account-block2">
-                <div class="my_code_h">Мои призы</div>
-                <div class="row">
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-head">Дата выигрыша</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-head">Код</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-head">Приз</div>
-                    </div>
-                    <div class="account-prize col-md-3"></div>
+              <div class="my_code_h">Мои призы</div>
+              <div class="row">
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-head">Дата выигрыша</div>
                 </div>
-                <div class="row">
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">05.07.2019</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">37289892898323</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">Билеты на матч</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-btn">
-                            <button>ПОЛУЧИТЬ</button>
-                        </div>
-                    </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-head">Код</div>
                 </div>
-                <div class="row">
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">05.07.2019</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">37289892898323</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">Атрибутика команды</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-btn">
-                            <button>ПОЛУЧИТЬ</button>
-                        </div>
-                    </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-head">Приз</div>
                 </div>
-                <div class="row">
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">05.07.2019</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">37289892898323</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-text">VIP-пакет на матч Зенита</div>
-                    </div>
-                    <div class="account-prize col-md-3">
-                        <div class="account-prize-btn">
-                            <button>ПОЛУЧИТЬ</button>
-                        </div>
-                    </div>
+                <div class="account-prize col-md-3"> </div>
+              </div>
+              <div class="row">
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">05.07.2019</div>
                 </div>
-                <div class="row-mob">
-                    <div class="account-prize-mob">
-                        <div class="account-prize-head">Дата выигрыша</div>
-                        <div class="account-prize-text">05.07.2019</div>
-                        <div class="account-prize-head">Имя</div>
-                        <div class="account-prize-text">Константин</div>
-                        <div class="account-prize-head">E-mail</div>
-                        <div class="account-prize-text">Konstantin@xxxx.xx</div>
-                        <div class="account-prize-btn">
-                            <button>ПОЛУЧИТЬ</button>
-                        </div>
-                    </div>
-                    <div class="account-prize-mob">
-                        <div class="account-prize-head">Дата выигрыша</div>
-                        <div class="account-prize-text">05.07.2019</div>
-                        <div class="account-prize-head">Имя</div>
-                        <div class="account-prize-text">Константин</div>
-                        <div class="account-prize-head">E-mail</div>
-                        <div class="account-prize-text">Konstantin@xxxx.xx</div>
-                        <div class="account-prize-btn">
-                            <button>ПОЛУЧИТЬ</button>
-                        </div>
-                    </div>
-                    <div class="account-prize-mob">
-                        <div class="account-prize-head">Дата выигрыша</div>
-                        <div class="account-prize-text">05.07.2019</div>
-                        <div class="account-prize-head">Имя</div>
-                        <div class="account-prize-text">Константин</div>
-                        <div class="account-prize-head">E-mail</div>
-                        <div class="account-prize-text">Konstantin@xxxx.xx</div>
-                        <div class="account-prize-btn">
-                            <button>ПОЛУЧИТЬ</button>
-                        </div>
-                    </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">37289892898323</div>
                 </div>
+                <div class="account-prize col-md-3">
+                  <div class="account-prize-text">Билеты на матч</div>
+                </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-btn"> 
+                    <button>ПОЛУЧИТЬ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">05.07.2019</div>
+                </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">37289892898323</div>
+                </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">Атрибутика команды</div>
+                </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-btn"> 
+                    <button>ПОЛУЧИТЬ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">05.07.2019</div>
+                </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-text">37289892898323</div>
+                </div>
+                <div class="account-prize col-md-3">
+                  <div class="account-prize-text">VIP-пакет на матч Зенита</div>
+                </div>
+                <div class="account-prize col-md-3"> 
+                  <div class="account-prize-btn"> 
+                    <button>ПОЛУЧИТЬ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row-mob">
+                <div class="account-prize-mob"> 
+                  <div class="account-prize-head">Дата выигрыша</div>
+                  <div class="account-prize-text">05.07.2019</div>
+                  <div class="account-prize-head">Имя</div>
+                  <div class="account-prize-text">Константин</div>
+                  <div class="account-prize-head">E-mail</div>
+                  <div class="account-prize-text">Konstantin@xxxx.xx</div>
+                  <div class="account-prize-btn"> 
+                    <button>ПОЛУЧИТЬ</button>
+                  </div>
+                </div>
+                <div class="account-prize-mob"> 
+                  <div class="account-prize-head">Дата выигрыша</div>
+                  <div class="account-prize-text">05.07.2019</div>
+                  <div class="account-prize-head">Имя</div>
+                  <div class="account-prize-text">Константин</div>
+                  <div class="account-prize-head">E-mail</div>
+                  <div class="account-prize-text">Konstantin@xxxx.xx</div>
+                  <div class="account-prize-btn"> 
+                    <button>ПОЛУЧИТЬ</button>
+                  </div>
+                </div>
+                <div class="account-prize-mob"> 
+                  <div class="account-prize-head">Дата выигрыша</div>
+                  <div class="account-prize-text">05.07.2019</div>
+                  <div class="account-prize-head">Имя</div>
+                  <div class="account-prize-text">Константин</div>
+                  <div class="account-prize-head">E-mail</div>
+                  <div class="account-prize-text">Konstantin@xxxx.xx</div>
+                  <div class="account-prize-btn"> 
+                    <button>ПОЛУЧИТЬ</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="club-prize">
-    <div class="popup-ball">
-        <h1>МЯЧ С АВТОГРАФОМ</h1>
-        <form>
-            <div class="close-popup-ball"></div>
-            <div class="img-ball-div"><img src="images/ball-1.png"/></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur deserunt dolorem ea esse,
-                expedita impedit itaque minima nobis odit perferendis possimus quibusdam ratione rem repellendus sequi
-                sit velit voluptatem!</p>
-        </form>
-    </div>
-    <div class="center">
-        <div class="club-prize-head"><span>ПРИЗЫ ОТ КЛУБА ЗЕНИТ</span></div>
-        <div class="club-prize-block">
+      </section>
+      <section class="club-prize">
+        <div class="center">
+          <div class="club-prize-head"><span>ПРИЗЫ ОТ КЛУБА ЗЕНИТ</span></div>
+          <div class="club-prize-block">
             <div class="club-prize-block1 two-items">
-                <p class="club-prize-block-h">ПРИЗЫ ЗА ПОКУПКУ</p>
-                <div class="row">
-                    <div class="club-prize-item col-md-6">
-                        <p class="club-prize-item-head">Регулярный приз</p>
-                        <div class="club-prize-icon"></div>
-                        <p class="club-prize-item-txt">
-                            Билеты <br/>на матч</p><a class="club-prize-item-link"
-                                                      href="JavaScript:void(0);">Подробнее</a>
-                    </div>
-                    <div class="club-prize-item col-md-6">
-                        <p class="club-prize-item-head">Главный приз</p>
-                        <div class="club-prize-icon"></div>
-                        <p class="club-prize-item-txt">
-                            Один день <br/>с любимой командой</p><a class="club-prize-item-link"
-                                                                    href="JavaScript:void(0);">Подробнее</a>
-                    </div>
+              <p class="club-prize-block-h">ПРИЗЫ ЗА ПОКУПКУ</p>
+              <div class="row">
+                <div class="club-prize-item col-md-6"> 
+                  <p class="club-prize-item-head">Регулярный приз</p>
+                  <div class="club-prize-icon"></div>
+                  <p class="club-prize-item-txt">
+                     Билеты <br/>на матч</p><a class="club-prize-item-link" href="#">Подробнее</a>
                 </div>
+                <div class="club-prize-item col-md-6"> 
+                  <p class="club-prize-item-head">Главный приз</p>
+                  <div class="club-prize-icon"></div>
+                  <p class="club-prize-item-txt">
+                     Один день <br/>с любимой командой</p><a class="club-prize-item-link" href="#">Подробнее</a>
+                </div>
+              </div>
             </div>
             <div class="club-prize-block1 three-items">
-                <p class="club-prize-block-h">ПРИЗЫ ЗА ВИКТОРИНУ</p>
-                <div class="row">
-                    <div class="club-prize-item col-md-4">
-                        <div class="club-prize-icon"></div>
-                        <p class="club-prize-item-txt">
-                            Мяч <br/>с автографом</p><a class="club-prize-item-link link-ball"
-                                                        href="JavaScript:void(0);">Подробнее</a>
-                    </div>
-                    <div class="club-prize-item col-md-4">
-                        <div class="club-prize-icon"></div>
-                        <p class="club-prize-item-txt">
-                            Футболка <br/>с автографом</p><a class="club-prize-item-link" href="#">Подробнее</a>
-                    </div>
-                    <div class="club-prize-item col-md-4">
-                        <div class="club-prize-icon"></div>
-                        <p class="club-prize-item-txt">
-                            Шарф <br/>с автографом</p><a class="club-prize-item-link" href="#">Подробнее</a>
-                    </div>
+              <p class="club-prize-block-h">ПРИЗЫ ЗА ВИКТОРИНУ</p>
+              <div class="row">
+                <div class="club-prize-item col-md-4"> 
+                  <div class="club-prize-icon"></div>
+                  <p class="club-prize-item-txt">
+                     Мяч <br/>с автографом</p><span class="club-prize-item-link link-ball" data-toggle="modal" data-target="#myModal5">Подробнее</span>
                 </div>
+                <div class="club-prize-item col-md-4"> 
+                  <div class="club-prize-icon"></div>
+                  <p class="club-prize-item-txt">
+                     Футболка <br/>с автографом</p><a class="club-prize-item-link" href="#">Подробнее</a>
+                </div>
+                <div class="club-prize-item col-md-4"> 
+                  <div class="club-prize-icon"></div>
+                  <p class="club-prize-item-txt">
+                     Шарф <br/>с автографом</p><a class="club-prize-item-link" href="#">Подробнее</a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="map">
-    <div class="center">
-        <div class="map-head"><span>ГДЕ КУПИТЬ</span></div>
-        <div class="map-block">
+      </section>
+      <section class="map">
+        <div class="center">
+          <div class="map-head"><span>ГДЕ КУПИТЬ</span></div>
+          <div class="map-block">
             <div class="map-iframe">
-                <div id="map"></div>
+              <div id="map"></div>
             </div>
+          </div>
+          <div class="map-all"><a href="#">Полный список адресов</a></div>
         </div>
-        <div class="map-all"><a href="#">Полный список адресов</a></div>
-    </div>
-</section>
-<section class="questions">
-    <div class="center">
-        <div class="questions-head"><span>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</span></div>
-        <div class="questions-block">
+      </section>
+      <section class="questions">
+        <div class="center">
+          <div class="questions-head"><span>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</span></div>
+          <div class="questions-block">
             <div class="questions-item">
-                <div class="questions-item-head">
-                    <p>Где и когда проводится акция?</p>
-                </div>
-                <div class="questions-item-body">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
-                        перешагнул в электронный дизайн.</p>
-                </div>
+              <div class="questions-item-head">
+                <p>Где и когда проводится акция?</p>
+              </div>
+              <div class="questions-item-body">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+              </div>
             </div>
             <div class="questions-item">
-                <div class="questions-item-head">
-                    <p>Кто является организатором акции?</p>
-                </div>
-                <div class="questions-item-body">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
-                        перешагнул в электронный дизайн.</p>
-                </div>
+              <div class="questions-item-head">
+                <p>Кто является организатором акции?</p>
+              </div>
+              <div class="questions-item-body">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+              </div>
             </div>
             <div class="questions-item">
-                <div class="questions-item-head">
-                    <p>Кто может принимать участие в акции?</p>
-                </div>
-                <div class="questions-item-body">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
-                        перешагнул в электронный дизайн.</p>
-                </div>
+              <div class="questions-item-head">
+                <p>Кто может принимать участие в акции?</p>
+              </div>
+              <div class="questions-item-body">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+              </div>
             </div>
             <div class="questions-item">
-                <div class="questions-item-head">
-                    <p>Как принять участие в акции?</p>
-                </div>
-                <div class="questions-item-body">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
-                        перешагнул в электронный дизайн.</p>
-                </div>
+              <div class="questions-item-head">
+                <p>Как принять участие в акции?</p>
+              </div>
+              <div class="questions-item-body">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+              </div>
             </div>
             <div class="questions-item">
-                <div class="questions-item-head">
-                    <p>Как зарегистрироваться на сайте?</p>
-                </div>
-                <div class="questions-item-body">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
-                        перешагнул в электронный дизайн.</p>
-                </div>
+              <div class="questions-item-head">
+                <p>Как зарегистрироваться на сайте?</p>
+              </div>
+              <div class="questions-item-body">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+              </div>
             </div>
             <div class="questions-item">
-                <div class="questions-item-head">
-                    <p>Как зарегистрировать чек на сайте?</p>
-                </div>
-                <div class="questions-item-body">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и
-                        перешагнул в электронный дизайн.</p>
-                </div>
+              <div class="questions-item-head">
+                <p>Как зарегистрировать чек на сайте?</p>
+              </div>
+              <div class="questions-item-body">
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="winer">
-    <div class="center">
-        <div class="winer-h"><span>ПОБЕДИТЕЛИ</span></div>
-        <div class="winer-block">
+      </section>
+      <section class="winer">
+        <div class="center">
+          <div class="winer-h"><span>ПОБЕДИТЕЛИ</span></div>
+          <div class="winer-block">
             <div class="winer-head">
-                <div class="winer-head row">
-                    <div class="winer-head-item"><span>Дата выигрыша</span></div>
-                    <div class="winer-head-item"><span>Имя</span></div>
-                    <div class="winer-head-item"><span>E-mail</span></div>
-                    <div class="winer-head-item"><span>Приз</span></div>
-                </div>
+              <div class="winer-head row">
+                <div class="winer-head-item"><span>Дата выигрыша</span></div>
+                <div class="winer-head-item"><span>Имя</span></div>
+                <div class="winer-head-item"><span>E-mail</span></div>
+                <div class="winer-head-item"><span>Приз</span></div>
+              </div>
             </div>
             <div>
-                <div class="winer-item">
-                    <div class="winer-item-row row">
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob"> Имя</p><span>Константин</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
-                        </div>
-                    </div>
+              <div class="winer-item">
+                <div class="winer-item-row row">
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob"> Имя</p><span>Константин</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
+                  </div>
                 </div>
-                <div class="winer-item">
-                    <div class="winer-item-row row">
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob"> Имя</p><span>Константин</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="winer-item">
+                <div class="winer-item-row row">
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob"> Имя</p><span>Константин</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
+                  </div>
                 </div>
-                <div class="winer-item">
-                    <div class="winer-item-row row">
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob"> Имя</p><span>Константин</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="winer-item">
+                <div class="winer-item-row row">
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob"> Имя</p><span>Константин</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
+                  </div>
                 </div>
-                <div class="winer-item">
-                    <div class="winer-item-row row">
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob"> Имя</p><span>Константин</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="winer-item">
+                <div class="winer-item-row row">
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob"> Имя</p><span>Константин</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Приз</p><span>Билеты на матч</span>
+                  </div>
                 </div>
-                <div class="winer-item">
-                    <div class="winer-item-row row">
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob"> Имя</p><span>Константин</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Приз</p><span>Атрибутика команды</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="winer-item">
+                <div class="winer-item-row row">
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob"> Имя</p><span>Константин</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Приз</p><span>Атрибутика команды</span>
+                  </div>
                 </div>
-                <div class="winer-item">
-                    <div class="winer-item-row row">
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob"> Имя</p><span>Константин</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
-                        </div>
-                        <div class="winer-row-item">
-                            <p class="winner-hed-mob">Приз</p><span>Атрибутика команды</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="winer-item">
+                <div class="winer-item-row row">
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Дата выигрыша</p><span>05.07.2019<span> 10:00</span></span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob"> Имя</p><span>Константин</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">E-mail</p><span>Konstantin@xxxx.xx</span>
+                  </div>
+                  <div class="winer-row-item">
+                    <p class="winner-hed-mob">Приз</p><span>Атрибутика команды</span>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="winer-pagination desk">
-                <div class="winer-pagination-block"><a class="prev-page" href="#"></a>
-                    <div><a class="pagination-item act" href="#">1</a><a class="pagination-item" href="#">2</a><a
-                            class="pagination-item" href="#">3</a><a class="pagination-item" href="#">4</a><a
-                            class="pagination-item" href="#">5</a><a class="pagination-item" href="#">6</a><a
-                            class="pagination-item" href="#">7</a><a class="pagination-item" href="#">8</a><a
-                            class="pagination-item" href="#">9</a><a class="pagination-item" href="#">10</a><a
-                            class="pagination-item" href="#">11</a><a class="pagination-item" href="#">12</a><a
-                            class="pagination-item" href="#">13</a><a class="pagination-item" href="#">14</a><a
-                            class="pagination-item" href="#">15</a><a class="pagination-item" href="#">16</a><a
-                            class="pagination-item" href="#">17</a><a class="pagination-item" href="#">18</a></div>
-                    <a class="next-page" href="#"></a>
-                </div>
+              <div class="winer-pagination-block"><a class="prev-page" href="#"></a>
+                <div><a class="pagination-item act" href="#">1</a><a class="pagination-item" href="#">2</a><a class="pagination-item" href="#">3</a><a class="pagination-item" href="#">4</a><a class="pagination-item" href="#">5</a><a class="pagination-item" href="#">6</a><a class="pagination-item" href="#">7</a><a class="pagination-item" href="#">8</a><a class="pagination-item" href="#">9</a><a class="pagination-item" href="#">10</a><a class="pagination-item" href="#">11</a><a class="pagination-item" href="#">12</a><a class="pagination-item" href="#">13</a><a class="pagination-item" href="#">14</a><a class="pagination-item" href="#">15</a><a class="pagination-item" href="#">16</a><a class="pagination-item" href="#">17</a><a class="pagination-item" href="#">18</a></div><a class="next-page" href="#"></a>
+              </div>
             </div>
             <div class="winer-pagination mob">
-                <div class="winer-pagination-block"><a class="prev-page" href="#"></a>
-                    <div><a class="pagination-item act" href="#">1</a><a class="pagination-item" href="#">2</a><a
-                            class="pagination-item" href="#">3</a><a class="pagination-item" href="#">4</a><a
-                            class="pagination-item" href="#">5</a><a class="pagination-item" href="#">6</a><a
-                            class="pagination-item" href="#">7</a><a class="pagination-item" href="#">8</a><a
-                            class="pagination-item" href="#">9</a></div>
-                    <a class="next-page" href="#"></a>
-                </div>
+              <div class="winer-pagination-block"><a class="prev-page" href="#"></a>
+                <div><a class="pagination-item act" href="#">1</a><a class="pagination-item" href="#">2</a><a class="pagination-item" href="#">3</a><a class="pagination-item" href="#">4</a><a class="pagination-item" href="#">5</a><a class="pagination-item" href="#">6</a><a class="pagination-item" href="#">7</a><a class="pagination-item" href="#">8</a><a class="pagination-item" href="#">9</a></div><a class="next-page" href="#"></a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<div class="feedback-form">
-    <form class="form-group">
-        <div class="close-popup-form"></div>
-        <div class="form-login-password">
-            <div class="form-login">
-                <input type="text" placeholder="Логин"/>
-            </div>
-            <div class="form-password">
-                <input type="email" placeholder="E-mail"/>
-            </div>
-        </div>
-        <div class="select-form">
-            <select class="tags-select form-control">
-                <option disabled="disabled" selected="selected">Тема</option>
-                <option>Option 1</option>
-                <option>Option 1</option>
-                <option>Option 1</option>
-                <option>Option 1</option>
-                <option>Option 1</option>
-            </select>
-        </div>
-        <div class="textarea-form">
-            <h3>Текст</h3>
-            <textarea class="form-control form-rounded" id="exampleFormControlTextarea1" rows="10" cols="10"></textarea>
-        </div>
-        <div class="box-input">
-            <input class="inputfile inputfile-3 no-js remove-this" type="file" name="file-3[]" id="file-3"
-                   data-multiple-caption="{count} files selected" multiple="multiple"/>
-            <label for="file-3"><img src="images/file-open.png"/><span>Прикрепить файл</span></label>
-        </div>
-        <div class="custom-control custom-checkbox mb-3" id="reg-button">
-            <input class="custom-control-input " type="checkbox" id="customCheck" name="defaultGroup"/>
-            <label class="custom-control-label" for="customCheck"><span>Я согласен с &nbsp;<a
-                    href="#">Правилами акции</a></span></label>
-        </div>
-        <div class="register-send-button">
-            <div class="send-button">Отправить</div>
-        </div>
-    </form>
-</div>
-<footer>
-    <div class="foot-block">
-        <div class="center">
+      </section>
+      <footer>
+        <div class="foot-block">
+          <div class="center">
             <div class="row">
-                <div class="col-md-4 foot-item"><span>ПРАВИЛА АКЦИИ</span></div>
-                <div class="col-md-4 foot-item"><span>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</span></div>
-                <div class="col-md-4 foot-item feedback-link"><span>ОБРАТНАЯ СВЯЗЬ</span></div>
+              <div class="col-md-4 foot-item"><span>ПРАВИЛА АКЦИИ</span></div>
+              <div class="col-md-4 foot-item"><span>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</span></div>
+              <div class="col-md-4 foot-item feedback-link"><span data-toggle="modal" data-target="#myModal4">ОБРАТНАЯ СВЯЗЬ</span></div>
             </div>
+          </div>
         </div>
-    </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-<script src="js/main.js"></script>
-</body>
-</head>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </head>
 </html>

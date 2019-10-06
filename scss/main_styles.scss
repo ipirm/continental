@@ -31,3 +31,68 @@ button:focus{
 .login-form-header, .register-form-header {
     z-index: 100;
 }
+@media(min-width:768px){
+.winer-item-row.row {
+    display: flex;
+}
+
+.winer-head.row {
+    display: flex;
+}
+}
+div#mob-heder .center .row {
+    display: flex;
+}
+
+.modal-dialog {
+    max-width: 624px !important;
+    width: unset !important;
+}
+
+@media(max-width:550px){
+    
+
+.d-flex.radio-buttons:after {content: "";display: block;clear: both;}
+
+
+span.not-valid.input-margin {
+    width: 100%;
+}
+
+.register-form-block-1.col-xs-6, .register-form-block-2.col-xs-6 {
+    display: block;
+    margin: 0 auto;
+    width: 70% !important;
+    float: unset !important;
+}
+
+.box-input input {
+    display: none !important;
+}
+}
+p.radio-second {
+    margin-left: 20px;
+}
+
+p.radio-first {
+    margin-left: 20px;
+}
+p.radio-first,.radio-second {
+    float: left;
+}
+.site-btn {
+    color: black;
+    width: 231px;
+    height: 54px;
+    display: block;
+    text-align: center;
+    float: left;
+    font-size: 23.32px;
+    font-family: 'Stag Sans Light';
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    border: none !important;
+    text-decoration: none !important;
+}

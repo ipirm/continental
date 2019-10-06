@@ -107,3 +107,62 @@ section.map {
     display: none;
 }
 }
+span.map-header {
+    font-size: 20px;
+    display: block;
+    font-family: 'Stag Sans Medium';
+}
+
+ymaps.ymaps-2-1-74-balloon__content>ymaps {
+    margin-right: 10px;
+}
+
+span.map-cont {
+    font-family: 'Stag Sans Book';
+    font-size: 16px;
+    display: block;
+}
+
+a.map-link {
+    font-family: 'Stag Sans Medium';
+    font-size: 18px;
+    color: #fea40a;
+}
+ymaps.ymaps-2-1-74-traffic {
+    display: none !important;
+}
+
+ymaps.ymaps-2-1-74-listbox.ymaps-2-1-74-listbox_opened_no.ymaps-2-1-74-listbox_align_right {
+    display: none !important;
+}
+
+ymaps.ymaps-2-1-74-scaleline {}
+
+ymaps.ymaps-2-1-74-float-button.ymaps-2-1-74-_hidden-text {
+    display: none !important;
+}
+
+ymaps.ymaps-2-1-74-scaleline {
+    display: none !important;
+}
+
+ymaps.ymaps-2-1-74-search.ymaps-2-1-74-search_layout_normal.ymaps-2-1-74-searchbox__normal-layout {
+    display: none !important;
+}
+
+ymaps.ymaps-2-1-74-controls__control {
+    display: none !important;
+}
+
+ymaps.ymaps-2-1-74-balloon.ymaps-2-1-74-balloon_layout_normal.ymaps-2-1-74-balloon_to_top.ymaps-2-1-74-i-custom-scroll {
+    border-radius: 20px !important;
+}
+
+ymaps.ymaps-2-1-74-balloon__layout {
+    border-radius: 20px;
+    padding: 0 !important;
+}
+
+ymaps.ymaps-2-1-74-balloon__content {
+    padding: 20px !important;
+}

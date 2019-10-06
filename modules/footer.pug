@@ -1,34 +1,3 @@
-div(class="feedback-form")
- form(class="form-group")
-  div(class="close-popup-form")
-  div(class="form-login-password")
-   div(class="form-login")
-    input(type="text" placeholder="Логин")
-   div(class="form-password")
-    input(type="email" placeholder="E-mail")
-  div(class="select-form")
-   select(class="tags-select form-control")
-    option(disabled selected) Тема
-    option Option 1
-    option Option 1
-    option Option 1
-    option Option 1
-    option Option 1
-  div(class="textarea-form")
-   h3 Текст
-   textarea(class="form-control form-rounded" id="exampleFormControlTextarea1" rows="10" cols="10")
-  div(class="box-input")
-   input(type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3 no-js remove-this" data-multiple-caption="{count} files selected" multiple)
-   label(for="file-3" )
-    img(src="images/file-open.png")
-    span Прикрепить файл
-  div(class="custom-control custom-checkbox mb-3" id="reg-button")
-   input(type="checkbox" class="custom-control-input " id="customCheck" name="defaultGroup")
-   label(class="custom-control-label" for="customCheck")
-    span Я согласен с &nbsp;
-     a(href="#") Правилами акции
-  div(class="register-send-button")
-   div(class="send-button") Отправить
 footer
  div(class="foot-block")
   .center
@@ -38,7 +7,7 @@ footer
     div(class="col-md-4 foot-item")
      span ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ
     div(class="col-md-4 foot-item feedback-link")
-     span ОБРАТНАЯ СВЯЗЬ
+     span(data-toggle="modal", data-target="#myModal4") ОБРАТНАЯ СВЯЗЬ
      
 script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js")
 script(src="js/main.js")
